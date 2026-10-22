@@ -1,0 +1,4 @@
+run = "npiet main.ppm"
+
+[nix]
+channel = "stable-21_11"

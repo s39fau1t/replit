@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Translation, Rotation, Scale</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <canvas id="gl-canvas"></canvas>
+    <input type="range" id="x-slider" name="x-slider" value="0" min="0">
+    <label for="x-slider">X</label>
+    <br>
+    <input type="range" id="y-slider" name="y-slider" value="0" min="0">
+    <label for="y-slider">Y</label>
+    <br>
+    <input type="range" id="rotation-slider" name="rotation-slider" value="0" min="0" max="360">
+    <label for="rotation-slider">Rotation</label>
+    <br>
+    <input type="range" id="scale-x-slider" name="scale-x-slider" value="1" min="-5" max="5" step="0.01">
+    <label for="scale-x-slider">ScaleX</label>
+    <br>
+    <input type="range" id="scale-y-slider" name="scale-y-slider" value="1" min="-5" max="5" step="0.01">
+    <label for="scale-y-slider">ScaleY</label>
+    <script src="matrix.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

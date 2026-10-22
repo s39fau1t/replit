@@ -1,0 +1,6 @@
+run = "make run"
+
+hidden = ["Makefile", "*/*.bin", "*/*.o", "os-image"]
+
+[nix]
+channel = "stable-21_11"

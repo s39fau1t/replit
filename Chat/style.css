@@ -1,0 +1,50 @@
+.centered {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#username-input {
+  width: 200px;
+  height: 20px;
+}
+
+#username-submit {
+  width: 60px;
+  height: 20px;
+  margin-top: 80%;
+}
+
+#message-input {
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin: auto;
+  width: 80vw;
+  height: 20px;
+}
+
+#message-div {
+  position: absolute;
+  display: none;
+  text-align: center;
+  font: 20px Sans-Serif;
+  top: 5vh;
+  width: 100vw;
+  height: 90vh;
+  overflow: scroll;
+}
+
+html {
+  overflow: hidden;
+}
+
+p {
+  margin: 0 0 5px 5px;
+  display: block;
+}

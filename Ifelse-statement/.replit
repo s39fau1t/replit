@@ -1,0 +1,3 @@
+run = "yabi main.bf && echo \n"
+
+entrypoint = "main.bf"

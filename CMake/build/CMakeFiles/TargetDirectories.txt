@@ -1,0 +1,14 @@
+/home/runner/CMake/build/CMakeFiles/install/strip.dir
+/home/runner/CMake/build/CMakeFiles/install/local.dir
+/home/runner/CMake/build/CMakeFiles/install.dir
+/home/runner/CMake/build/CMakeFiles/list_install_components.dir
+/home/runner/CMake/build/CMakeFiles/rebuild_cache.dir
+/home/runner/CMake/build/CMakeFiles/Tutorial.dir
+/home/runner/CMake/build/CMakeFiles/edit_cache.dir
+/home/runner/CMake/build/MathFunctions/CMakeFiles/install/strip.dir
+/home/runner/CMake/build/MathFunctions/CMakeFiles/install.dir
+/home/runner/CMake/build/MathFunctions/CMakeFiles/list_install_components.dir
+/home/runner/CMake/build/MathFunctions/CMakeFiles/rebuild_cache.dir
+/home/runner/CMake/build/MathFunctions/CMakeFiles/edit_cache.dir
+/home/runner/CMake/build/MathFunctions/CMakeFiles/install/local.dir
+/home/runner/CMake/build/MathFunctions/CMakeFiles/MathFunctions.dir

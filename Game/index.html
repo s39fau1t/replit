@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>RTS</title>
+	  <link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!--<canvas id="canvas"></canvas>-->
+		<div id="menu-container" class="container">
+			<input id="name-input" class="textbox" type="text" placeholder="Name" autocomplete="off">
+			<div class="button" onclick="changeScene(&quot;roomSelect&quot;); setName(); populateRoomsList()" style="position: absolute; left: calc(50vw - 100px); top: calc(50vh + 10px); width: 200px; height: 50px;">Play</div>
+		</div>
+		<div id="room-select-container" class="container" hidden>
+			<div class="button" onclick="changeScene(&quot;menu&quot;)" style="position: absolute; left: 10px; top: 10px; width: 200px; height: 50px;"><img src="assets/images/arrow.png" width="50%" height="100%"></div>
+			<div class="header" style="position: absolute; left: 672px; top: 322px;">Name</div>
+			<div class="header" style="position: absolute; left: 851px; top: 322px;">Players</div>
+			<div class="button" onclick="populateRoomsList()" style="position: absolute; left: 1480px; top: 295px; width: 200px; height: 50px; border-radius: 10px 10px 0 0;"><img src="assets/images/refresh.png" width="25%" height="100%"></div>
+			<div id="rooms-list"></div>
+			<div class="button" onclick="changeScene(&quot;createRoom&quot;);" style="position: absolute; left: calc(50vw - 100px); top: 75vh; width: 200px; height: 50px;">Create Room</div>
+		</div>
+		<div id="connecting-container" class="container" hidden>
+			<div class="big-centered-text">Connecting...</div>
+		</div>
+		<div id="create-room-container" class="container" hidden>
+			<div class="button" onclick="changeScene(&quot;roomSelect&quot;)" style="position: absolute; left: 10px; top: 10px; width: 200px; height: 50px;"><img src="assets/images/arrow.png" width="50%" height="100%"></div>
+			<input id="room-name-input" class="textbox" type="text" placeholder="Room Name" autocomplete="off">
+			<div class="button" onclick="createRoom()" style="position: absolute; left: calc(50vw - 100px); top: calc(50vh + 10px); width: 200px; height: 50px;">Start Room</div>
+		</div>
+		<div id="room-container" class="container" hidden>
+			<div class="button" onclick="closeConnection(); changeScene(&quot;roomSelect&quot;); populateRoomsList()" style="position: absolute; width: 200px; height: 50px; left: 10px; top: 10px;"><img src="assets/images/arrow.png" width="50%" height="100%"></div>
+			<div id="room">
+				<div id="chat-container">
+					<div id="chat-messages"></div>
+					<input id="chat-input" type="text" placeholder="Press enter to chat" autocomplete="off">
+				</div>
+				<div id="players-container"></div>
+				<div id="owner-controls" hidden>
+					<div class="button" onclick="startGame()" style="position: absolute; left: calc(50% - 100px); bottom: 10px; width: 200px; height: 50px;">Start Game</div>
+				</div>
+			</div>
+			<div id="game-start-text">Waiting for room owner to start game...</div>
+		</div>
+		<div id="loading-container" class="container" hidden>
+			<div class="big-centered-text">Loading...</div>
+		</div>
+		<div id="game-container" class="container" hidden>
+			<canvas id="canvas" tabindex="-1"></canvas>
+		</div>
+		<script src="load-assets.js"></script>
+	  <script src="menu-scripts.js"></script>
+		<script src="game.js"></script>
+	</body>
+</html>

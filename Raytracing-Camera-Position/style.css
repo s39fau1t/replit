@@ -1,0 +1,10 @@
+body {
+	background: black;
+}
+
+#canvas {
+	position: absolute;
+	
+	left: calc(50vw - 300px);
+	top: calc(50vh - 300px);
+}

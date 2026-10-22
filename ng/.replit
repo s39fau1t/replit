@@ -1,0 +1,6 @@
+run = "make run"
+
+hidden = ["build", "libraries", "compile_flags.txt", "Makefile", "ඞ"]
+
+[nix]
+channel = "stable-22_11"

@@ -1,0 +1,70 @@
+#canvas {
+	position: absolute;
+	width: 1000px;
+	height: 1000px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	outline: none;
+}
+
+#loader {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+
+	width: 200px;
+	height: 200px;
+
+	border: 20px solid rgba(0, 0, 0, 0.1);
+	border-top: 20px solid black;
+	border-radius: 50%;
+
+	animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg) }
+
+	100% { transform: rotate(360deg) }
+}
+
+#loading-txt-container {
+	position: absolute;
+	width: 1000px;
+	height: 1000px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	
+	height: 450px;
+}
+
+#loading-txt {
+	font-family: sans-serif;
+	
+	text-align: center;
+}
+
+#loading-txt::after {
+	content: "";
+	
+	animation: periods 4s linear infinite;
+}
+
+@keyframes periods {
+	0% { content: "" }
+
+	25% { content: "." }
+
+	50% { content: ".." }
+
+	75% { content: "..." }
+}

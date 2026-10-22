@@ -1,0 +1,27 @@
+#main {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.note {
+	text-align: left;
+	font-size: 0.8em;
+}
+
+#leaderboard {
+	text-align: left;
+}
+
+#leaderboard td:first-child, #leaderboard th:first-child {
+	flex: 0.2;
+	text-align: center;
+}
+
+#credit {
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+}

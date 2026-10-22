@@ -1,0 +1,6 @@
+run = "python3 zombie_interp_3.py main.zomb"
+
+hidden = ["zombie_interp_3.py"]
+
+[nix]
+channel = "stable-21_11"

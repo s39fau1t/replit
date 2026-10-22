@@ -1,0 +1,287 @@
+.container {
+	position: absolute;
+
+	left: 0;
+	top: 0;
+	
+	width: 100vw;
+	height: 100vh;
+}
+
+.textbox {
+	box-sizing: border-box;
+	
+	padding: 10px;
+
+	border-style: solid;
+	
+	border-radius: 10px;
+}
+
+#name-input {
+	position: absolute;
+
+	left: calc(50vw - 100px);
+	top: calc(50vh - 60px);
+
+	width: 200px;
+	height: 50px;
+}
+
+.button {
+	display: flex;
+	
+	background: black;
+
+	color: white;
+
+	border-radius: 10px;
+
+	font: 20px sans-serif;
+
+	text-align: center;
+
+	align-items: center;
+
+	justify-content: center;
+
+	cursor: pointer;
+
+	user-select: none;
+
+	transition: transform 0.5s ease-out;
+}
+
+.button:hover {
+	transform: scale(1.05, 1.05);
+}
+
+.header {
+	transform: translateX(-50%);
+	
+	font: 20px sans-serif;
+	
+	user-select: none;
+}
+
+#rooms-list {
+	position: absolute;
+	
+	left: 25vw;
+	top: 30vh;
+	
+	width: 1120px;
+	height: 460px;
+
+	background: rgba(100, 100, 100, 0.5);
+
+	border-radius: 10px 0 10px 10px;
+
+	overflow-y: auto;
+}
+
+.room {
+	display: flex;
+	
+	background: rgb(140, 140, 140);
+
+	width: calc(100% - 3px);
+	height: 10%;
+
+	border-radius: 10px;
+
+	border: solid 1.5px black;
+
+	align-items: center;
+
+	cursor: pointer;
+
+	user-select: none;
+}
+
+.room:hover {
+	background: rgb(155, 155, 155);
+}
+
+.room:nth-child(even) {
+	background: rgb(190, 190, 190);
+}
+
+.room:nth-child(even):hover {
+	background: rgb(205, 205, 205);
+}
+
+.name {
+	position: absolute;
+
+	left: 5vw;
+
+	transform: translateX(-50%);
+	
+	font: 18px sans-serif;
+}
+
+.players {
+	position: absolute;
+
+	left: 13vw;
+
+	transform: translateX(-50%);
+	
+	font: 18px sans-serif;
+}
+
+#room-name-input {
+	position: absolute;
+
+	left: calc(50vw - 100px);
+	top: calc(50vh - 60px);
+
+	width: 200px;
+	height: 50px;
+}
+
+.big-centered-text {
+	position: absolute;
+
+	left: 50vw;
+	top: 50vh;
+
+	color: black;
+
+	font: 50px sans-serif;
+
+	transform: translate(-50%, -50%);
+
+	user-select: none;
+}
+
+#room {
+	position: absolute;
+
+	left: 20vw;
+	top: 20vh;
+
+	width: 1344px;
+	height: 689.4px;
+
+	border-radius: 10px;
+
+	background: rgba(100, 100, 100, 0.5);
+}
+
+#chat-container {
+	position: absolute;
+	
+	left: 15px;
+	bottom: 15px;
+}
+
+#chat-messages {
+	width: 336px;
+	height: 172.35px;
+
+	background: rgba(100, 100, 100, 0.6);
+
+	border-radius: 10px 10px 0 0;
+
+	overflow-y: auto;
+}
+
+.chat {
+	margin-left: 10px;
+
+	word-break: break-all;
+
+	font: 15px sans-serif;
+
+	user-select: none;
+}
+
+.chat:nth-child(1) {
+	margin-top: 10px;
+}
+
+.chat:last-child {
+	margin-bottom: 10px;
+}
+
+#chat-input {
+	box-sizing: border-box;
+	
+	width: 100%;
+
+	padding: 10px;
+
+	border: none;
+
+	border-radius: 0 0 10px 10px;
+}
+
+#players-container {
+	position: absolute;
+
+	right: 15px;
+	top: 15px;
+
+	width: 30%;
+	height: calc(100% - 30px);
+
+	background: rgba(100, 100, 100, 0.6);
+
+	border-radius: 10px;
+}
+
+.player {
+	margin-left: 0;
+
+	width: 100%;
+
+	text-align: center;
+	
+	color: black;
+	
+	font: 20px sans-serif;
+
+	user-select: none;
+}
+
+.player:nth-child(1) {
+	margin-top: 0;
+
+	background: rgb(200, 200, 200);
+
+	border-radius: 10px 10px 0 0;
+}
+
+#game-start-text {
+	position: absolute;
+
+	left: 50vw;
+	bottom: 150px;
+
+	transform: translateX(-50%);
+	
+	font: 40px sans-serif;
+	
+	user-select: none;
+}
+
+#game-chat-container {
+	position: absolute;
+
+	left: 15px;
+	bottom: 15px;
+}
+
+#canvas {
+	position: absolute;
+
+	left: 0;
+	top: 0;
+	
+	width: 100vw;
+	height: 100vh;
+
+	outline: none;
+}

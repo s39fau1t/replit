@@ -1,0 +1,51 @@
+body {
+	background: black;
+}
+
+#scene {
+	position: absolute;
+
+	left: calc(50vw - 100px);
+	top: calc(50vh - 130px);
+	
+	width: 200px;
+	height: 260px;
+
+	perspective: 600px;
+}
+
+#card {
+	position: relative;
+	
+	width: 100%;
+	height: 100%;
+
+	transition: transform 1s;
+
+	transform-style: preserve-3d;
+
+	animation: spin 10s infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotateY(0deg) rotateX(0deg) }
+
+	25% { transform: rotateY(360deg) rotateX(0deg) }
+
+	50% { transform: rotateY(360deg) rotateX(-360deg) }
+
+	75% { transform: rotateY(0deg) rotateX(-360deg) }
+}
+
+#back {
+	transform: rotateY(180deg);
+}
+
+.card-face {
+	position: absolute;
+	
+	width: 100%;
+	height: 100%;
+
+	backface-visibility: hidden;
+}

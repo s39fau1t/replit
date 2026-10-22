@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>AoC Leaderboard</title>
+		<link href="bounce.css" rel="stylesheet" type="text/css">
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="main">
+			<h1>AoC Leaderboard</h1>
+			<button onclick="loadLeaderboard()">Refresh</button>
+			<p class="note">Note: Server only fetches leaderboard every 15 minutes, so it may take a while to update.</p>
+			<table id="leaderboard">
+				<thead>
+					<tr>
+						<th>Place</th>
+						<th>Name</th>
+						<th>Score</th>
+						<th>Stars</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+		<p id="credit">Made with the amazing <a class="cyan" href="https://replit.com/@Bookie0/bouncecss" target="_blank" rel="noopener noreferrer">bounce.css</a> by <a class="cyan" href="https://replit.com/@Bookie0" target="_blank" rel="noopener noreferrer">Bookie0</a></p>
+		<script src="script.js"></script>
+	</body>
+</html>

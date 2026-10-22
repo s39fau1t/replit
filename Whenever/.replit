@@ -1,0 +1,6 @@
+run = "java Whenever main.whn"
+
+hidden = ["*.class"]
+
+[nix]
+channel = "stable-21_11"

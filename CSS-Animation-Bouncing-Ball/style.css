@@ -1,0 +1,51 @@
+body {
+	background-color: deepskyblue;
+}
+
+#sun {
+	position: absolute;
+
+	left: 50px;
+	top: 50px;
+
+	width: 200px;
+	height: 200px;
+
+	background-color: yellow;
+
+	border-radius: 50%;
+}
+
+#ball {
+	position: absolute;
+
+	left: calc(50vw - 50px);
+	bottom: 50px;
+	
+	border-radius: 50px;
+
+	background-color: indianred;
+	
+	width: 100px;
+	height: 100px;
+
+	animation: bounce 0.4s ease-out alternate infinite;
+}
+
+@keyframes bounce {
+	0% { transform: translateY(0) }
+
+	100% { transform: translateY(-200px) }
+}
+
+#ground {
+	position: absolute;
+
+	left: 0;
+	bottom: 0;
+
+	background-color: green;
+
+	width: 100vw;
+	height: 50px;
+}
