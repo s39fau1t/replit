@@ -7,7 +7,7 @@ A lot of random stuff and me messing around
   <br>
   <img width="250" height="250" src="https://github.com/user-attachments/assets/2488e102-1354-4500-a6f2-add367303472" />
   <br>
-  a finished game where you shoot down other airplanes; has animations, sounds, upgrades, and bosses with special abilities that I think are really cool
+  a game where you shoot down other airplanes; has animations, sounds, upgrades, and bosses with special abilities that I think are really cool
 - **Platformer**
   <br>
   <img width="250" height="250" src="https://github.com/user-attachments/assets/1d2acbbe-551b-41b6-9160-0d124edf2c6e" />
